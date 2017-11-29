@@ -1,4 +1,4 @@
-package com.example.stuuuiodo;
+package com.example.chenyunfei20171129;
 
 import android.app.Application;
 import android.graphics.Bitmap;
@@ -16,10 +16,10 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import java.io.File;
 
 /**
- * Created by lenovo on 2017/11/22.
+ * Created by lenovo on 2017/11/28.
  */
 
-public class MyApp extends Application {
+public class Myadpp extends Application {
     ImageLoader imageLoader;
     @Override
     public void onCreate() {

@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     >
+
     <LinearLayout
-        android:id="@+id/ll1"
         android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
+        android:layout_height="100dp"
         >
+
         <ImageView
             android:id="@+id/iv"
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@mipmap/ic_launcher"
-            />
-
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
     </LinearLayout>
-
-
     <LinearLayout
-        android:layout_toRightOf="@+id/ll1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:orientation="vertical"
         >
         <TextView
             android:id="@+id/tv1"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="哇哈哈哈"
-            android:textSize="15sp"
+            android:text="哇哈哈哈哈"
+            android:textSize="19sp"
             />
         <TextView
             android:id="@+id/tv2"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="哇哈哈哈"
-            android:textSize="15sp"
+            android:text="哇哈哈哈哈"
+            android:textSize="19sp"
             />
     </LinearLayout>
 
-</RelativeLayout>
+
+</LinearLayout>

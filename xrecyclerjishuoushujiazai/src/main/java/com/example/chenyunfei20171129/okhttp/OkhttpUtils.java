@@ -1,4 +1,4 @@
-package com.example.stuuuiodo.okhttp;
+package com.example.chenyunfei20171129.okhttp;
 
 import java.io.File;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class OkhttpUtils {
                     .writeTimeout(20,TimeUnit.SECONDS)
                     .connectTimeout(20,TimeUnit.SECONDS)
                     //添加拦截器
-                    .addInterceptor(new LoggingInterceptor())
+                    //.addInterceptor(new LoggingInterceptor())
                     .build();
         }
         return okhttpUtils ;
