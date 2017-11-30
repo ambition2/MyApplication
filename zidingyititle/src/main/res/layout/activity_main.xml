@@ -3,11 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.studyone.MainActivity">
-
-   <com.jcodecraeer.xrecyclerview.XRecyclerView
-       android:id="@+id/xrecycler"
+    android:layout_height="match_parent" tools:context="com.example.zidingyititle.MainActivity">
+   <com.example.zidingyititle.TagTitleview
+       android:id="@+id/title"
        android:layout_width="match_parent"
-       android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+       android:layout_height="70dp">
+
+   </com.example.zidingyititle.TagTitleview>
 
 </LinearLayout>
