@@ -1,4 +1,4 @@
-package com.example.studyone;
+package com.example.webviewbanner;
 
 import org.junit.Test;
 

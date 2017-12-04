@@ -1,4 +1,4 @@
-package com.example.zidingyititle;
+package com.example.webviewbanner;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.zidingyititle", appContext.getPackageName());
+        assertEquals("com.example.webviewbanner", appContext.getPackageName());
     }
 }
