@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.1"
 
     defaultConfig {
-        applicationId "com.example.studyone"
+        applicationId "com.example.logandrechmvp"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -27,10 +27,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
     compile files('libs/gson-2.2.4.jar')
-    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.9.0'
     compile 'com.squareup.okio:okio:1.13.0'
+    testCompile 'junit:junit:4.12'
 }

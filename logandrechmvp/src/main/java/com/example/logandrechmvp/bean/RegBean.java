@@ -1,13 +1,13 @@
-package lanbo.lanbo20171120.bean;
+package com.example.logandrechmvp.bean;
 
 /**
- * Created by asus on 2017/11/20.
+ * Created by lenovo on 2017/12/6.
  */
 
-public class CancleBean {
+public class RegBean {
 
     /**
-     * msg : 订单状态修改成功
+     * msg : 注册成功
      * code : 0
      */
 

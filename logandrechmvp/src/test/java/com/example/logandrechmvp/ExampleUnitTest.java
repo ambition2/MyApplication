@@ -1,4 +1,4 @@
-package com.example.appgouwu;
+package com.example.logandrechmvp;
 
 import org.junit.Test;
 
