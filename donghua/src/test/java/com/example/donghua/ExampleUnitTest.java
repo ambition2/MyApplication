@@ -1,4 +1,4 @@
-package lanbo.lanbo20171120;
+package com.example.donghua;
 
 import org.junit.Test;
 

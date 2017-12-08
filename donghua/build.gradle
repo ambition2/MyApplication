@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.1"
 
     defaultConfig {
-        applicationId "com.example.zidingyititle"
+        applicationId "com.example.donghua"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
