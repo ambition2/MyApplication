@@ -50,12 +50,20 @@ public class Catagorybean {
          * ishome : 1
          * name : 京东超市
          */
-
+        private  boolean ischecked;
         private int cid;
         private String createtime;
         private String icon;
         private int ishome;
         private String name;
+
+        public boolean ischecked() {
+            return ischecked;
+        }
+
+        public void setIschecked(boolean ischecked) {
+            this.ischecked = ischecked;
+        }
 
         public int getCid() {
             return cid;

@@ -1,9 +1,8 @@
-package com.example.webviewbanner;
+package com.example.webviewbanner.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ExpandableListView;
@@ -11,6 +10,7 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.webviewbanner.R;
 import com.example.webviewbanner.adaper.MylistViewAdaper;
 import com.example.webviewbanner.adaper.ProductCatagoryAdapter;
 import com.example.webviewbanner.bean.BannerBean;
@@ -33,6 +33,7 @@ public class MainActivity extends Activity implements IShowdataview{
     public ExpandableListView mElv;
     public ScrollView mSv;
     List<String> list;
+    MylistViewAdaper  liadaper;
 
 
     @Override
@@ -57,26 +58,26 @@ public class MainActivity extends Activity implements IShowdataview{
     }
 
 
+
     @Override
     public void showCatagory(final List<Catagorybean.DataBean> list) {
-        MylistViewAdaper adaper=new MylistViewAdaper(this,list);
-        lv.setAdapter(adaper);
+        liadaper=new MylistViewAdaper(this,list);
+        lv.setAdapter(liadaper);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, "你好!", Toast.LENGTH_LONG).show();
                 int cid = list.get(i).getCid();
                 precenter.getproduct(cid+"");
-
+                //调用adaper里面的方法来设置选中的背景色
+                liadaper.setchanggeitem(i);
             }
         });
-
 
 
     }
 
     @Override
-    public void showProductCatagory(List<ProductCatagorybean.DataBean> group, List<List<ProductCatagorybean.DataBean.ListBean>> child) {
+    public void showProductCatagory(final List<ProductCatagorybean.DataBean> group, final List<List<ProductCatagorybean.DataBean.ListBean>> child) {
        // Log.i("=================", "showProductCatagory: "+child.toString());
         ProductCatagoryAdapter adapter=new ProductCatagoryAdapter(this,group,child);
         mElv.setAdapter(adapter);
@@ -84,10 +85,18 @@ public class MainActivity extends Activity implements IShowdataview{
         for (int i = 0; i < group.size(); i++) {
             mElv.expandGroup(i);
         }
+
         adapter.setLinster(new ProductCatagoryAdapter.updatalinster() {
+
             @Override
             public void setdata(View view, int position) {
-                Toast.makeText(MainActivity.this, "我不好!", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "我不好!"+position, Toast.LENGTH_LONG).show();
+
+                Intent intent=new Intent(MainActivity.this,NextActivity.class);
+                String pscid = String.valueOf(child.get(position).get(position).getPscid());
+               intent.putExtra("pscid",pscid);
+                startActivity(intent);
+
             }
         });
 

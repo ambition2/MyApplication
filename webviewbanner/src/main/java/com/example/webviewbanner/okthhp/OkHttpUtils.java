@@ -16,7 +16,9 @@ public class OkHttpUtils {
     private final OkHttpClient client;
 
     private OkHttpUtils() {
-        client = new OkHttpClient.Builder().build();
+        client = new OkHttpClient.Builder()
+
+                .build();
     }
 
     public static OkHttpUtils getOkHttpUtils() {

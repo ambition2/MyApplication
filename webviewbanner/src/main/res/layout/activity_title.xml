@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.webviewbanner.activity.TitleActivity">
+
+   <com.example.webviewbanner.dao.CustomViewTitle
+       android:id="@+id/custom_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+   </com.example.webviewbanner.dao.CustomViewTitle>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:text="热搜"
+        />
+    <com.example.webviewbanner.dao.CustomFlowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/dianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="羊毛衫 新品" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="碟子" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="苹果8" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胸罩" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可口可乐百事可乐" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朝如青丝暮成雪,李太白" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="瑜伽球" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="猫妹妹" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天生我材必有用" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="千金散尽还复来" />
+    </com.example.webviewbanner.dao.CustomFlowLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        android:textColor="#000"
+        android:textSize="22sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F2F5"
+        />
+    <ListView
+        android:id="@+id/listview_activity"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </ListView>
+    <Button
+
+        android:id="@+id/btn_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空历史搜索"
+        />
+
+</LinearLayout>

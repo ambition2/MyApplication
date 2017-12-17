@@ -1,4 +1,4 @@
-package com.example.webviewbanner;
+package com.example.webviewbanner.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+
+import com.example.webviewbanner.R;
 
 public class WebviewActivity extends Activity {
     WebView wb;

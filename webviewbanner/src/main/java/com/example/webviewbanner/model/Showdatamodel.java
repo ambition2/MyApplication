@@ -6,6 +6,7 @@ import android.view.View;
 import com.example.webviewbanner.bean.BannerBean;
 import com.example.webviewbanner.bean.Catagorybean;
 import com.example.webviewbanner.bean.ProductCatagorybean;
+import com.example.webviewbanner.bean.RecyclerBean;
 import com.example.webviewbanner.okthhp.OkHttpUtils;
 import com.example.webviewbanner.okthhp.OnNetListener;
 import com.google.gson.Gson;
@@ -78,7 +79,7 @@ public class Showdatamodel implements IShowdatamodel {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String string = response.body().string();
-                handler.post(new Runnable() {
+                handler.post( new Runnable() {
                     @Override
                     public void run() {
                         BannerBean bannerBean = new Gson().fromJson(string, BannerBean.class);

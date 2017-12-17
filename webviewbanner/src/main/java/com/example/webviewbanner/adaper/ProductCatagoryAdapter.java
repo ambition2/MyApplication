@@ -104,6 +104,7 @@ public class ProductCatagoryAdapter extends BaseExpandableListAdapter {
         List<ProductCatagorybean.DataBean.ListBean> listBeen = child.get(groupPosition);
         GvAdapter adapter = new GvAdapter(context, listBeen);
         holder.gv.setAdapter(adapter);
+
         holder.gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

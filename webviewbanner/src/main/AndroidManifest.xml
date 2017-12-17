@@ -12,14 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".WebviewActivity"></activity>
+        <activity android:name=".activity.WebviewActivity" />
+        <activity
+            android:name=".activity.NextActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity android:name=".activity.TitleActivity" />
+        <activity android:name=".activity.DetailsActivity" />
+        <activity android:name=".activity.LogActivity">
+
+        </activity>
     </application>
 
 </manifest>

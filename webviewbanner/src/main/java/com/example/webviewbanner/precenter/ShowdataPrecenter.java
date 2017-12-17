@@ -5,6 +5,7 @@ import android.util.Log;
 import com.example.webviewbanner.bean.BannerBean;
 import com.example.webviewbanner.bean.Catagorybean;
 import com.example.webviewbanner.bean.ProductCatagorybean;
+import com.example.webviewbanner.bean.RecyclerBean;
 import com.example.webviewbanner.model.IShowdatamodel;
 import com.example.webviewbanner.model.Showdatamodel;
 import com.example.webviewbanner.okthhp.OnNetListener;
@@ -84,5 +85,6 @@ public class ShowdataPrecenter {
             }
         });
     }
+
 
 }
