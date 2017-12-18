@@ -20,7 +20,8 @@ public class MainActivity extends Activity {
 
     private void initview() {
         //设置播放加载路径
-        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.w));
+        //因视屏太大，所以记住要新建一个raw文件 里面存放视屏
+       // videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.w));
         //播放
         videoView.start();
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
