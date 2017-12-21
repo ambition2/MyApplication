@@ -16,19 +16,21 @@ import java.util.Map;
  */
 
 public class ShowDataPrecenter {
-    IShowDataModel model;
+    ShowDaraModel model;
     IShowDataView view;
     public ShowDataPrecenter(IShowDataView view){
         this.view=view;
         model=new ShowDaraModel();
     }
-    public void showlastdata(String uid){
+    public void showlastdata(String uid,String page){
         Map<String,String> map=new HashMap<>();
-        map.put("uid ",uid);
+        map.put("uid",uid);
+        map.put("page",page);
+
         model.showdata(map, new OnNetListener<DinfdanBean>() {
             @Override
             public void onSuccess(DinfdanBean dingbean) {
-                view.showdata(dingbean.getData());
+                view.showdata(dingbean);
             }
 
             @Override

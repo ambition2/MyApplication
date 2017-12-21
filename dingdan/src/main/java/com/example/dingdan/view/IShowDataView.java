@@ -10,5 +10,5 @@ import java.util.List;
  */
 
 public interface IShowDataView {
-     void showdata(List<DinfdanBean.DataBean> been);
+     void showdata(DinfdanBean been);
 }

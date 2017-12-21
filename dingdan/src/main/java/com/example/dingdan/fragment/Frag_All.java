@@ -30,17 +30,17 @@ public class Frag_All extends Fragment implements IShowDataView{
         View view = View.inflate(getActivity(), R.layout.frag_all, null);
          xre=view.findViewById(R.id.xre);
         ShowDataPrecenter precenter=new ShowDataPrecenter(this);
-        precenter.showlastdata("71");
+        precenter.showlastdata("71","1");
 
         return view;
     }
 
     @Override
-    public void showdata(List<DinfdanBean.DataBean> been) {
-
+    public void showdata(DinfdanBean been) {
+        System.out.println(been.toString());
         LinearLayoutManager manager=new LinearLayoutManager(getActivity());
         xre.setLayoutManager(manager);
-        Myadaper myadaper=new Myadaper(getContext(),been);
+        Myadaper myadaper=new Myadaper(getContext(),been.getData());
         xre.setAdapter(myadaper);
 
     }

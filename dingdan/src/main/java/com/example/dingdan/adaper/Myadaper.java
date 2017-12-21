@@ -61,7 +61,9 @@ public class Myadaper extends RecyclerView.Adapter<Myadaper.MyViewHolder>{
         }
 
              holder.name.setText(bean.get(position).getTitle());
-             holder.price.setText(bean.get(position).getPrice()+"");
+
+              holder.price.setText(bean.get(position).getPrice()+"");
+              holder.price.setTextColor(Color.parseColor("#ff0000"));
              holder.createtime.setText(bean.get(position).getCreatetime());
         holder.bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,7 @@ public class Myadaper extends RecyclerView.Adapter<Myadaper.MyViewHolder>{
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
                 Toast.makeText(context, "自宫成功", Toast.LENGTH_SHORT).show();
+
 
             }
         });
