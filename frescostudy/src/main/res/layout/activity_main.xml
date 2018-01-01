@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.frescostudy.MainActivity">
+
+
+
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/main_adv"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    fresco:placeholderImage="@drawable/q"
+    fresco:placeholderImageScaleType="fitCenter"
+    fresco:actualImageScaleType="focusCrop"
+    fresco:progressBarImage="@drawable/w"
+    fresco:progressBarImageScaleType="centerInside"
+    fresco:progressBarAutoRotateInterval="5000"
+    fresco:failureImage="@drawable/e"
+    fresco:failureImageScaleType="centerInside"
+    fresco:retryImage="@drawable/r"
+    fresco:retryImageScaleType="centerCrop"
+    fresco:fadeDuration="4000"
+    fresco:backgroundImage="@android:color/holo_orange_light"
+    fresco:roundAsCircle="true"
+    />
+  <TextView
+      android:id="@+id/tv1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="仆街"
+      />
+    <Button
+        android:id="@+id/btt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停/播放"
+        android:layout_above="@+id/main_adv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+  <Button
+      android:id="@+id/clear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="清除"
+      android:layout_below="@+id/tv1"
+      android:layout_alignRight="@+id/main_adv"
+      android:layout_alignEnd="@+id/main_adv"
+      android:layout_marginRight="28dp"
+      android:layout_marginEnd="28dp"
+      android:layout_marginTop="35dp" />
+
+</RelativeLayout>
